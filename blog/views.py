@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from .models import Post
 # .은 현재 디렉토리 또는 애플리케이션을 의미
@@ -9,3 +9,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 # 이 함수는 요청을 넘겨받아 render 메서드를 호출한다.
 # 이 render 메서드는 요청을 받아 blog/post_list.html 템플릿을 보여준다.
+
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', { 'post' : post})
