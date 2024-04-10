@@ -133,3 +133,5 @@ INSTALLED_APPS = [
     'blog',
 ]
 LANGUAGE_CODE = 'ko-kr'
+
+LOGIN_REDIRECT_URL = '/'

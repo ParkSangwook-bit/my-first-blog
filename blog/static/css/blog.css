@@ -1,6 +1,6 @@
 h1 a {
     color: #FCA205;
-    font-family: pretendard;
+    font-family: 'Pretendard';
 }
 
 .page-header {
@@ -20,7 +20,7 @@ h1 a {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Pretendard', cursive;
 }
 
 .date {
@@ -49,3 +49,4 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
+
